@@ -2,16 +2,12 @@
 
 A simple Loan Calculator that allows users to calculate the **monthly payment**, **total interest**, and **total repayment amount** for a given loan amount, interest rate, and loan term.
 
----
-
 ## Features
 - Calculate **monthly payments** for a loan.
 - View **total interest** paid over the loan term.
 - Display the **total repayment amount** (principal + interest).
 - Intuitive and user-friendly interface.
 - Responsive design.
-
----
 
 ## How to Use
 1. Enter the following details into the respective input fields:
@@ -24,39 +20,30 @@ A simple Loan Calculator that allows users to calculate the **monthly payment**,
    - **Total Interest**
    - **Total Repayment Amount**
 
----
-
 ## Project Structure
 The project consists of the following files:
 
 - **index.html**: Contains the structure of the calculator.
 - **style.css**: Adds styling to the calculator for a clean and modern design.
 - **script.js**: Handles the calculations and displays the results.
-
----
-
 ## Formula Used
+
 ### Monthly Payment:
-\[
-M = \frac{P \cdot r}{1 - (1 + r)^{-n}}
-\]
+M = P * r / (1 - (1 + r)^(-n))
+
 Where:
-- \( M \): Monthly payment
-- \( P \): Loan amount (principal)
-- \( r \): Monthly interest rate (annual interest rate divided by 12 and converted to decimal)
-- \( n \): Total number of payments (loan term in months)
+- `M`: Monthly payment
+- `P`: Loan amount (principal)
+- `r`: Monthly interest rate (annual interest rate divided by 12 and converted to decimal)
+- `n`: Total number of payments (loan term in months)
 
 ### Total Repayment:
-\[
-\text{Total Repayment} = M \cdot n
-\]
+Total Repayment = M * n
+
 
 ### Total Interest:
-\[
-\text{Total Interest} = \text{Total Repayment} - P
-\]
+Total Interest = Total Repayment - P
 
----
 
 ## Demo
 Simply open the `index.html` file in your browser to use the Loan Calculator.
